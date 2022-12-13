@@ -1,9 +1,10 @@
 from flask import Flask 
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hallo isch bin de Viv'
+    return render_template("table.html")
 
-app.run()
+app.run(debug=True)

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block table%}
+    <html>
+    <style>
+    table,th {
+        border:1px solid rgb(0, 0, 0);
+    }
+    </style>
+
+    <body>
+
+        <table style="width:100%">
+            <tr>
+                <th></th>
+                <th>Item</th>
+                <th>Category</th> <!--Will feature a tagging system-->
+                <th>Price</th>
+                <th>Link</th> <!--Possible future Amazon integration-->
+                <th>Added by</th>
+                <th>Notes</th>
+            </tr>
+            <tr  style="width:100%">
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="number">€</td>
+                <td><input type="url"></td>
+                <td>
+                    <select id="users" name="users">
+                        <option value="flori">Flori</option>
+                        <option value="viv">Viv</option>
+                      </select>
+                </td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+
+    </body>
+    </html>
+{% endblock %}
